@@ -1,0 +1,20 @@
+{
+  "name": "0x00-ES6_basic",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "dev": "node 0-main.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "babel-jest": "^27.2.5",
+    "eslint": "^8.0.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "jest": "^27.2.5"
+  },
+  "dependencies": {
+    "semistandard": "^17.0.0"
+  }
+}
