@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* function to getAPI */
 export default function getResponseFromAPI() {
   return (new Promise((resolve, reject) => { }));
 }
