@@ -8,20 +8,25 @@ export default class Currency {
     return this._code;
   }
 
-  set code(code) {
-    this._code = code;
-  }
-
   get name() {
     return this._name;
   }
 
-  set name(name) {
-    this._name = name;
+  set code(val) {
+    if (typeof val !== 'string') {
+      throw new TypeError('Code must be a string');
+    }
+    this._code = val;
+  }
+
+  set name(val) {
+    if (typeof val !== 'string') {
+      throw new TypeError('Name must be a string');
+    }
+    this._name = val;
   }
 
   displayFullCurrency() {
     return `${this._name} (${this._code})`;
   }
 }
-
