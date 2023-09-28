@@ -1,39 +1,43 @@
 export default class HolbertonCourse {
-
   constructor(name, length, students) {
+    if (typeof name !== 'string' || typeof length !== 'number' || !Array.isArray(students)) {
+      throw new Error('Invalid input type');
+    }
     this._name = name;
     this._length = length;
     this._students = students;
   }
 
-  get getName() {
+  get name() {
     return this._name;
   }
-  set setName(name) {
-    if (typeof name !== 'string') {
-      throw new TypeError('Name must be a string');
+
+  set name(value) {
+    if (typeof value !== 'string') {
+      throw new Error('Invalid input type');
     }
-    this._name = name;
+    this._name = value;
   }
 
-  get getLength() {
+  get length() {
     return this._length;
   }
 
-  set setLength(length) {
-    if (typeof length !== 'number') {
-      throw new TypeError('Length must be a number');
+  set length(value) {
+    if (typeof value !== 'number') {
+      throw new Error('Invalid input type');
     }
-    this._length = length;
+    this._length = value;
   }
-  get getStudents() {
+
+  get students() {
     return this._students;
   }
 
-  set setStudents(std) {
-    if (!Array.isArray(val)) {
-      throw new TypeError('Students must be an array');
+  set students(value) {
+    if (!Array.isArray(value)) {
+      throw new Error('Invalid input type');
     }
-    this._students = std;
+    this._students = value;
   }
 }
