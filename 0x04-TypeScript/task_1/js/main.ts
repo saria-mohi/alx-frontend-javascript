@@ -39,10 +39,10 @@ export const printTeacher: printTeacherFunction = (firstName: string, lastName: 
 
 console.log(printTeacher('john', 'doe'));
 
-interface StudentClassInterface {
-    firstName: string;
-    lastName: string;
-}
+// interface StudentClassInterface {
+//     firstName: string;
+//     lastName: string;
+// }
 
 interface StudentClassConstructorInterface {
     new(firstName: string, lastName: string): StudentClassInterface; 
